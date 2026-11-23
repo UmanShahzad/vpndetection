@@ -1,0 +1,16 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "vpndetection",
+    "main": "src/index.ts",
+    "compatibility_date": "2026-11-13",
+    "observability": {
+        "enabled": true
+    },
+    // The Worker checks the visitors of the routes you give it. Add yours here, or under
+    // Settings > Domains & Routes in the dashboard:
+    // "routes": [{ "pattern": "example.com/*", "zone_name": "example.com" }],
+    // Every setting has a default, so the Deploy button asks for the API key alone. Set one under Settings >
+    // Variables and Secrets in the dashboard, which later deploys keep, or here, as the README says:
+    // "vars": { "BLOCK": "vpn,tor", "ACTION": "block" },
+    "keep_vars": true
+}
